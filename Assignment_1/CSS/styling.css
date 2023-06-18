@@ -1,0 +1,173 @@
+h1{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    margin: 0px;
+   background-image:url("../IMG/no-text.jpeg");
+   height: 100%;
+    width: auto;
+    background-size: 100% 100%; /*Image is stretch,would not work using cover */
+}
+.gap {
+ width: 85px;
+}/* Puts a gap inbetween the actors names*/
+
+.title {
+    width: 85px;
+
+}/*Puts a gap inbetween the LETTERS in 'the' */
+
+.matrix{
+    width: 75px;
+
+}/*Puts a gap inbetween the LETTERS in 'MATRIX' */
+
+.bold{
+    font-size: 175%;
+    font-weight: bold;
+}/*Enlarges some words credits while leaving other words untouched*/
+.stacked {
+    display: inline-flex;
+    vertical-align: top;
+    text-align: right;
+}/*stacks some words on top of each other and to the right in the credits*/
+
+.flex>header{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    padding: 150px 100px 80px 300px;
+    align-items: center;
+    flex-flow: column wrap;
+
+}
+.flex>header>div{
+    width:auto;
+    height: auto;
+    flex-grow: 1;
+}
+
+.flex>header>div>h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100px;
+    color: azure;
+    text-shadow: 1px 1px 2px cornflowerblue, 0 0 1em cornflowerblue, 0 0 0.2em cornflowerblue; /* puts a glow like effect on the word */
+    margin: 0;
+
+}
+
+.flex>header>nav>menu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.flex>header>nav>menu>li{
+    padding: 0px 15px;
+    font-size: 25px;
+
+}
+.flex>header>nav>menu>li>a{
+    color: red; /*Always makes the hyperlink red even after clicked on*/
+}
+
+.flex>main{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    padding-top: 150%;
+    padding-left: 5%;
+}
+
+.flex>main>div{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100px;
+    margin: 0;
+    align-items: center;
+}
+.flex>main>section{
+    font-size: 100px;
+    margin: 0;
+    align-items: center;
+}
+
+
+.flex>main>div>p:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75%;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline; /*tries to underline word but wont under the <span> */
+
+}
+.flex>main>div>p:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(100, 149, 237, 0.3); /* tries to make look like poster with matrix surrounded by blue background*/
+}
+.flex>main>div>p:nth-child(1),.flex>main>div>p:nth-child(2){
+    color: #E2E5E3;
+    text-shadow: 1px 1px 2px cornflowerblue, 0 0 1em cornflowerblue, 0 0 0.2em cornflowerblue;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    font-family: 'Matrix', sans-serif;
+
+}
+.flex>main>section{
+    padding-top: 10%;
+}
+
+.flex>main>section>p:nth-child(1),.flex>main>section>p:nth-child(2),.flex>main>section>p:nth-child(3),.flex>main>section>p:nth-child(4) {
+
+    flex-direction: column;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 13%;
+    width: auto;
+    margin: 0;
+    padding:0px;
+    font-family: 'Nanum Gothic', sans-serif;
+    white-space: nowrap;
+}
+.flex>main>section>p:nth-child(5){
+    flex-direction: column;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 18%;
+    margin: 0;
+    padding:0px;
+    font-family: 'Roboto Mono', monospace;
+    white-space: nowrap;
+}
+
+
+
+.flex>footer {
+    margin-top: auto;
+    font-family: 'Roboto Mono', monospace;
+    flex-direction: column;
+    font-size: 50px;
+    color: azure;
+    text-shadow: 1px 1px 2px blue, 0 0 1em blue, 0 0 0.2em blue;
+padding-top: 100%;
+    padding-left: 15%;
+    align-items: center;
+
+
+    text-align: center;
+}
+
+
+
